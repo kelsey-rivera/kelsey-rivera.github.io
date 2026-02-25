@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <title>Order | Island Brews Coffee</title>
+    </head>
+<body>
+  <header>
+    <img src="./order_files/photo-1587080413959-06b859fb107d" width="10%" alt="Cup of coffee with a design and two cookies on a plate">
+    <h1>Island Brews - Catering Order</h1>
+  </header>
+
+  <nav>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="order.html">Order</a></li>
+    <li><a href="contact.html">Contact</a></li>
+          </ul>
+  </nav>
+
+  <main>
+    <h2>Place Your Catering Order</h2>
+    <p>Fill out the form below to order coffee and snacks for your next event!</p>
+
+    <p><strong>* fields are required</strong></p>
+
+    <form>
+        <fieldset>
+      <legend>Contact Information</legend>
+
+      <p>
+        <label for="name"> Full Name *</label><br>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </p>
+
+      <p>
+        <label for="email">Email *</label><br>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </p>
+
+      <p>
+        <label for="phone">Phone</label><br>
+        <input type="text" id="phone" placeholder="Enter your phone number" required>
+      </p>
+    </fieldset>
+        
+        <fieldset>
+      <legend>Order Details</legend>
+
+      <p>
+        <label for="date">Event Date *</label><br>
+        <input type="date" id="date" placeholder="MM/DD/YYYY" required>
+      </p>
+
+      <p>
+        <label for="guests">Number of Guests *</label><br>
+        <input type="number" id="guests" min="1" required>
+      </p>
+
+      <p>
+        <label for="coffee-type">Coffee Selection</label><br>
+        <select id="coffee-type" name="coffee-type">
+          <option value="">Choose one</option>
+          <option value="kona">Kona Blend</option>
+          <option value="espresso">Espresso Bar</option>
+          <option value="cold">Cold Brew Station</option>
+        </select>
+            </p>
+            </fieldset>
+        
+        <fieldset>
+            
+      <legend>Pastry Add-ons</legend>
+
+      <p>
+        <input type="checkbox" id="muffins" name="pastries" value="muffins"> 
+        <label for="muffins">Tropical Muffins ($3/person)</label> <br>
+        <input type="checkbox" id="croissants" name="pastries" value="croissants">
+        <label for="croissants">Butter Croissants ($4/person)</label> <br>
+        <input type="checkbox" id="scones" name="pastires" value="scones">
+        <label for="scones"> Hawaiian Scones ($3.50/person))</label> <br>
+      </p>
+
+      <p>
+        <label for="requests">Special Requests</label><br>
+        <textarea id="requests" name="requests" cols="40" rows="4" placeholder="Any dietary restrictions or special requests?"></textarea>
+      </p>
+         </fieldset>
+            
+            
+      <h3>Pricing Information</h3>
+
+      <table border="1">
+          <thead>
+        <tr>
+          <th scope="col">Package</th>
+          <th scope="col">Price per Person</th>
+          <th scope="col">Minimum Order</th>
+        </tr>
+        </thead>
+          <tbody>
+        <tr>
+          <th scope="row">Basic Coffee Service</th>
+          <td>$8</td>
+          <td>10 guests</td>
+        </tr>
+        <tr>
+          <th scope="row">Premium Espresso Bar</th>
+          <td>$15</td>
+          <td>15 guests</td>
+        </tr>
+        <tr>
+          <th scope="row">Full Breakfast Spread</th>
+          <td>$25</td>
+          <td>20 guests</td>
+        </tr>
+      </tbody>
+        </table>
+
+      <p>For more info <a href="menu.html">visit our menu</a>.</p>
+
+      <button type="sumbit">Submit Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 Island Brews Café</p>
+    <p>123 Palm Street, Honolulu, HI</p>
+  </footer>
+
+
+</body>
+    </html>
