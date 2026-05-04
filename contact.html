@@ -1,67 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Island Brews</title>
-  </head>
-  <body>
-    <h1>Contact Island Brews</h1>
-    <p>Planning an event? Let us bring the aloha to you!</p>
+    <title>Kaleoscreations - Home</title>
+  <link rel="stylesheet" href="index.css">
 
+</head>
+<body>
+    
+    <header>
+        <div class="logo"> Kaleoscreations </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="contact.html">Contact/Order</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="hero">
+   <img src="images/kaleoscreations-logo-revamp.png" alt="Kaleoscreations business logo" width="400">
+    
+ <h1>Kaleoscreations | Crafting Contact / Order</h1>
+ </section>
+    
+  <main>
+    <h2>Contact / Order Kaleoscreations</h2>
+    <p>Need a new look or to add to your collection? Let us help you accesorise!</p>
+      
+      
     <form>
-      <!-- PART 1: Contact Information Fieldset -->
-      <fieldset>
-        <legend>Contact Information</legend>
 
-        <!-- TODO: Add Name Input (see Part 1, Step 1) -->
+      <fieldset>
+        <legend>Contact / Order Information</legend>
+
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
 
         <br><br>
 
-        <!-- TODO: Add Email Input (see Part 1, Step 2) -->
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
       </fieldset>
 
       <br>
 
-      <!-- PART 2: Event Type Dropdown (see Part 2, Step 1) -->
-      <label for="event-type">Event Type:</label>
-      <select id="event-type" name="event-type">
-        <option value="">Choose event type</option>
-        <option value="corporate">Corporate Meeting</option>
-        <option value="wedding">Wedding</option>
-        <option value="birthday">Birthday Party</option>
-        <option value="other">Other</option>
+      <label for="jewelry-type">Jewelry Type (hold Ctrl/Cmd to select multiple):</label>
+      <select id="jewelry-type" name="jewelry-type" multiple>
+        <option value="">Choose jewelry type</option>
+       <option value="earrings">Necklace</option>
+        <option value="earrings">Charms</option>
+        <option value="necklace">Earrings</option>
+        <option value="bracelet">Bracelet</option>
+        <option value="ankelet">Ankelet</option>
+        <option value="jean-chain">Jean chain</option>
+        <option value="wallet-chain">Wallet chain</option>
+        <option value="waist-chain">Waist Chain</option>
+          <option value="Can-lamp">Can Lamp</option>
+        <option value="costum">Costum</option>
       </select>
+        
+        <br><br>
+        
+        <label for="requests">Design requests (colors, metal types, styles):</label>
+      <br>
+      <textarea id="details" name="details" rows="5" cols="40"></textarea>
+        <br><br>
 
       <br><br>
 
-      <!-- PART 2: Event Date (see Part 2, Step 2) -->
-      <label for="event-date">Event Date:</label>
-      <input type="date" id="event-type" name="event-type" required>
+      <label for="pick-up-date">Pick up Date:</label>
+      <input type="date" id="jewelry-type" name="jewelry-type" required>
 
       <br><br>
 
-      <!-- PART 2: Additional Details (see Part 2, Step 3) -->
       <label for="details">Additional Details:</label>
       <br>
       <textarea id="details" name="details" rows="5" cols="40"></textarea>
+        <br><br>
+
+      <input type="checkbox" id="shipping" name="shipping">
+      <label for="shipping">This order will need to be shipped</label>
+        
+        <br><br>
+        
+        <label for="adress">Shipping adress (if needed):</label>
+        <input type="text" id="adress" name="adress">
 
       <br><br>
 
-      <!-- PART 3: Newsletter Checkbox (see Part 3, Step 1) -->
       <input type="checkbox" id="newsletter" name="newsletter">
-      <label for="newsletter">Send me the Island Brews newsletter</label>
+      <label for="newsletter">Send me the Kaleoscreations monthly newsletter</label>
 
       <br><br>
 
       <p><em>We'll respond within 2 business days.</em></p>
 
-      <!-- PART 3: Submit Button (see Part 3, Step 2) -->
       <button type="submit">Submit Inquiry</button>
     </form>
-  </body> 
+  </main> 
+    
+    <footer> 
+    <p>Kaleoscreations - Waimānalo Hawai'i - Last updated 5/4/2026</p>
+    </footer>
+    </body>
+    
 </html>
